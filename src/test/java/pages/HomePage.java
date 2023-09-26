@@ -27,5 +27,9 @@ public class HomePage {
 
     public void ClickLogOff() { page.click(lnkLogOff);}
 
-    public void ClickDelete() { page.click(btnDelete);}
+    public void DeleteCreateUser(String userName) {
+        String locator = String.format("//td[normalize-space(.)='%s']/parent::tr//td[normalize-space(.)='Delete']", userName);
+        page.click(locator);
+        page.click(btnDelete);
+    }
 }
