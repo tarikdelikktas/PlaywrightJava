@@ -7,7 +7,7 @@ import com.microsoft.playwright.Playwright;
 public class FrameworkConfig {
 
     public static Page LocalPage;
-    public static Playwright Playright;
+    public static Playwright Playwright;
     public static Browser Browser;
 
 }
