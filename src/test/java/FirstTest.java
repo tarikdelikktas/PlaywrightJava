@@ -40,7 +40,7 @@ public class FirstTest {
 
     @AfterTest
     public void cleanUp() throws Exception {
-        FrameworkConfig.LocalPage.click();
+        FrameworkConfig.LocalPage.close();
         FrameworkConfig.Playwright.close();
         FrameworkConfig.Browser.close();
     }
